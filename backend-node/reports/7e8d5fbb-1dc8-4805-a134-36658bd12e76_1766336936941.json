@@ -1,0 +1,79 @@
+{
+  "report_id": "7e8d5fbb-1dc8-4805-a134-36658bd12e76",
+  "report_name": "User Behavior",
+  "generated_at": "2025-12-21T17:08:56.286Z",
+  "time_period": "month",
+  "period": {
+    "start": "2025-11-20T22:00:00.000Z",
+    "end": "2025-12-21T17:08:56.286Z"
+  },
+  "data": {
+    "total_users": 5,
+    "risk_distribution": {
+      "low": 5,
+      "medium": 0,
+      "high": 0,
+      "critical": 0,
+      "total": 5,
+      "percentages": {
+        "low": 100,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      }
+    },
+    "top_risky_users": [
+      {
+        "email": "alice.brown@company.com",
+        "username": null,
+        "risk_score": 0,
+        "risk_level": "low",
+        "status": "suspended",
+        "department": "Unknown",
+        "last_activity": "2025-12-21T15:12:10.960242+00:00"
+      },
+      {
+        "email": "john.doe@company.com",
+        "username": null,
+        "risk_score": 0,
+        "risk_level": "low",
+        "status": "suspended",
+        "department": "Unknown",
+        "last_activity": "2025-12-21T15:12:11.279012+00:00"
+      },
+      {
+        "email": "jane.smith@company.com",
+        "username": null,
+        "risk_score": 0,
+        "risk_level": "low",
+        "status": "suspended",
+        "department": "Unknown",
+        "last_activity": "2025-12-21T15:12:11.875121+00:00"
+      },
+      {
+        "email": "bob.jones@company.com",
+        "username": null,
+        "risk_score": 0,
+        "risk_level": "low",
+        "status": "suspended",
+        "department": "Unknown",
+        "last_activity": "2025-12-21T15:12:15.024059+00:00"
+      },
+      {
+        "email": "admin@company.com",
+        "username": null,
+        "risk_score": 0,
+        "risk_level": "low",
+        "status": "suspended",
+        "department": "Unknown",
+        "last_activity": "2025-12-21T15:12:16.06766+00:00"
+      }
+    ],
+    "risk_trends": {
+      "current_average": 0,
+      "previous_average": 0,
+      "trend": "stable",
+      "change": 0
+    }
+  }
+}

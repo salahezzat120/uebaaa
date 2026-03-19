@@ -1,0 +1,26 @@
+===========================================
+SENDGRID QUICK SETUP (EASIEST!)
+===========================================
+
+1. Sign up: https://signup.sendgrid.com/
+   (Free - 100 emails/day)
+
+2. Get API Key:
+   - Dashboard → Settings → API Keys
+   - Create API Key → Full Access
+   - Copy the key (starts with SG.)
+
+3. Update .env file:
+   SMTP_HOST=smtp.sendgrid.net
+   SMTP_PORT=587
+   SMTP_SECURE=false
+   SMTP_USER=apikey
+   SMTP_PASSWORD=SG.your-api-key-here
+   SOC_EMAILS=sklans120@gmail.com
+
+4. Test: node test-email.js
+
+NO APP PASSWORDS NEEDED! Just copy the API key! 🚀
+
+===========================================
+

@@ -1,0 +1,22 @@
+===========================================
+ADD THESE LINES TO YOUR .env FILE
+===========================================
+
+Open: backend-node/.env
+
+Add these lines at the end of the file:
+
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_SECURE=false
+SMTP_USER=salahezzat120@gmail.com
+SMTP_PASSWORD=dincvxngaqrlhzgm
+SOC_EMAILS=salahezzat120@gmail.com
+
+===========================================
+IMPORTANT: 
+- No spaces in password: dincvxngaqrlhzgm
+- Save the file after adding
+- Then run: node test-email.js
+===========================================
+

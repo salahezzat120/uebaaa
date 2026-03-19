@@ -49,3 +49,7 @@
 **/*.onnx
 **/models/*.bin
 **/public/models/*.bin
+
+# Tools/Distributions
+**/logstash-9.2.3/
+**/logstash-*/

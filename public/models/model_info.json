@@ -1,0 +1,11 @@
+{
+  "model_path": "models/lstm_ae_cert.h5",
+  "model_type": "LSTM Autoencoder",
+  "input_shape": [
+    null,
+    7,
+    11
+  ],
+  "status": "Requires backend API for inference",
+  "note": "Model saved with older Keras version. Use backend API approach."
+}

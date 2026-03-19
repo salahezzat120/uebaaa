@@ -1,0 +1,10 @@
+Copy these lines and add them to your backend-node/.env file:
+
+# Gmail SMTP Configuration (Email Alerts)
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_SECURE=false
+SMTP_USER=salahezzat120@gmail.com
+SMTP_PASSWORD=dincvxngaqrlhzgm
+SOC_EMAILS=salahezzat120@gmail.com
+

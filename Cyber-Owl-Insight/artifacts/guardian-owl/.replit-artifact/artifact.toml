@@ -1,0 +1,27 @@
+kind = "mobile"
+previewPath = "/"
+title = "Guardian Owl"
+version = "1.0.0"
+id = "artifacts/guardian-owl"
+router = "expo-domain"
+
+[[integratedSkills]]
+name = "expo"
+version = "1.0.0"
+
+[[services]]
+ensurePreviewReachable = "/status"
+name = "expo"
+paths = [ "/" ]
+localPort = 19661
+
+[services.development]
+run = "pnpm --filter @workspace/guardian-owl run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/guardian-owl", "run", "build" ]
+run = [ "pnpm", "--filter", "@workspace/guardian-owl", "run", "serve" ]
+
+[services.env]
+PORT = "19661"
+BASE_PATH = "/"

@@ -1,0 +1,70 @@
+{
+  "report_id": "65115aae-ebc1-440c-974d-faf87365f588",
+  "report_name": "User Behavior",
+  "generated_at": "2025-12-22T06:59:51.693Z",
+  "time_period": "year",
+  "period": {
+    "start": "2024-12-21T22:00:00.000Z",
+    "end": "2025-12-22T06:59:51.693Z"
+  },
+  "data": {
+    "total_users": 4,
+    "risk_distribution": {
+      "low": 4,
+      "medium": 0,
+      "high": 0,
+      "critical": 0,
+      "total": 4,
+      "percentages": {
+        "low": 100,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      }
+    },
+    "top_risky_users": [
+      {
+        "email": "bob.jones@company.com",
+        "username": null,
+        "risk_score": 0,
+        "risk_level": "low",
+        "status": "suspended",
+        "department": "Unknown",
+        "last_activity": "2025-12-22T06:59:25.688139+00:00"
+      },
+      {
+        "email": "admin@company.com",
+        "username": null,
+        "risk_score": 0,
+        "risk_level": "low",
+        "status": "suspended",
+        "department": "Unknown",
+        "last_activity": "2025-12-22T06:59:41.668183+00:00"
+      },
+      {
+        "email": "alice.brown@company.com",
+        "username": null,
+        "risk_score": 0,
+        "risk_level": "low",
+        "status": "suspended",
+        "department": "Unknown",
+        "last_activity": "2025-12-22T06:59:47.889561+00:00"
+      },
+      {
+        "email": "jane.smith@company.com",
+        "username": null,
+        "risk_score": 0,
+        "risk_level": "low",
+        "status": "suspended",
+        "department": "Unknown",
+        "last_activity": "2025-12-22T06:59:49.783122+00:00"
+      }
+    ],
+    "risk_trends": {
+      "current_average": 0,
+      "previous_average": 0,
+      "trend": "stable",
+      "change": 0
+    }
+  }
+}

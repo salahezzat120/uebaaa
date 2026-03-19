@@ -1,0 +1,38 @@
+===========================================
+FINAL FIX - Generate New App Password
+===========================================
+
+The current app password doesn't work. You MUST generate a NEW one.
+
+STEP 1: Generate New App Password
+----------------------------------
+1. Go to: https://myaccount.google.com/apppasswords
+2. Make sure you're logged into: salahezzat120@gmail.com
+3. In the app name field, type: Guardian Owl UEBA
+4. Click "إنشاء" (Create)
+5. Copy the 16-character password shown
+
+STEP 2: Update .env File
+-------------------------
+Open: backend-node/.env
+
+Find this line:
+SMTP_PASSWORD=huxwkrhyskkzrdlfk
+
+Replace with your NEW password (remove spaces):
+SMTP_PASSWORD=your-new-password-here
+
+Example:
+If password is: "abcd efgh ijkl mnop"
+Use: SMTP_PASSWORD=abcdefghijklmnop
+
+STEP 3: Test
+------------
+cd backend-node
+node test-email.js
+
+===========================================
+IMPORTANT: The app password MUST be generated
+for salahezzat120@gmail.com (your SMTP_USER)
+===========================================
+

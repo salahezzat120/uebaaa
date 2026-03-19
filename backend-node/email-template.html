@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Security Alert</title>
+  <style>
+    body { 
+      font-family: Arial, sans-serif; 
+      line-height: 1.6; 
+      color: #333; 
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    .container { 
+      max-width: 600px; 
+      margin: 0 auto; 
+      padding: 20px; 
+      background-color: #ffffff;
+    }
+    .header { 
+      background: {{SEVERITY_COLOR}}; 
+      color: white; 
+      padding: 20px; 
+      border-radius: 5px 5px 0 0; 
+      text-align: center;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    .header p {
+      margin: 5px 0 0 0;
+      font-size: 14px;
+      opacity: 0.9;
+    }
+    .content { 
+      background: #f9f9f9; 
+      padding: 20px; 
+      border: 1px solid #ddd; 
+      border-top: none;
+    }
+    .alert-box { 
+      background: white; 
+      border-left: 4px solid {{SEVERITY_COLOR}}; 
+      padding: 15px; 
+      margin: 15px 0; 
+      border-radius: 4px;
+    }
+    .severity-badge { 
+      display: inline-block; 
+      padding: 5px 10px; 
+      background: {{SEVERITY_COLOR}}; 
+      color: white; 
+      border-radius: 3px; 
+      font-weight: bold; 
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+    .details-table { 
+      width: 100%; 
+      border-collapse: collapse; 
+      margin: 15px 0; 
+      background: white;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .details-table td { 
+      padding: 12px; 
+      border-bottom: 1px solid #eee; 
+    }
+    .details-table td:first-child { 
+      font-weight: bold; 
+      width: 150px; 
+      background-color: #f9f9f9;
+    }
+    .details-table tr:last-child td {
+      border-bottom: none;
+    }
+    .footer { 
+      text-align: center; 
+      padding: 20px; 
+      color: #666; 
+      font-size: 12px; 
+      background-color: #ffffff;
+      border-top: 1px solid #ddd;
+    }
+    .button { 
+      display: inline-block; 
+      padding: 12px 24px; 
+      background: {{SEVERITY_COLOR}}; 
+      color: white; 
+      text-decoration: none; 
+      border-radius: 5px; 
+      margin-top: 15px; 
+      font-weight: bold;
+    }
+    .button:hover {
+      opacity: 0.9;
+    }
+    .priority {
+      font-size: 14px;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>{{SEVERITY_EMOJI}} Security Alert: {{SEVERITY}}</h1>
+      <p class="priority">Priority: {{PRIORITY}}</p>
+    </div>
+    
+    <div class="content">
+      <div class="alert-box">
+        <h2 style="margin-top: 0; color: #333;">{{ALERT_TITLE}}</h2>
+        <p><strong>Severity:</strong> <span class="severity-badge">{{SEVERITY}}</span></p>
+        <p><strong>Status:</strong> {{STATUS}}</p>
+        <p><strong>Anomaly Score:</strong> {{ANOMALY_SCORE}}/100</p>
+      </div>
+
+      <h3 style="color: #333; margin-top: 25px;">Alert Details</h3>
+      <table class="details-table">
+        <tr>
+          <td>Alert ID:</td>
+          <td>{{ALERT_ID}}</td>
+        </tr>
+        <tr>
+          <td>Description:</td>
+          <td>{{DESCRIPTION}}</td>
+        </tr>
+        <tr>
+          <td>Timestamp:</td>
+          <td>{{TIMESTAMP}}</td>
+        </tr>
+        <tr>
+          <td>User:</td>
+          <td>{{USER_EMAIL}}</td>
+        </tr>
+        <tr>
+          <td>Source IP:</td>
+          <td>{{SOURCE_IP}}</td>
+        </tr>
+        <tr>
+          <td>Action:</td>
+          <td>{{ACTION}}</td>
+        </tr>
+        <tr>
+          <td>Resource:</td>
+          <td>{{RESOURCE}}</td>
+        </tr>
+        <tr>
+          <td>Detection Model:</td>
+          <td>{{MODEL}}</td>
+        </tr>
+      </table>
+
+      <p style="margin-top: 25px; text-align: center;">
+        <a href="{{DASHBOARD_URL}}" class="button">
+          View Alert in Dashboard
+        </a>
+      </p>
+    </div>
+
+    <div class="footer">
+      <p><strong>Guardian Owl UEBA System</strong></p>
+      <p>This is an automated alert from your security monitoring system.</p>
+      <p>Please investigate this alert promptly based on its severity level.</p>
+      <p style="margin-top: 20px; color: #999; font-size: 11px;">
+        Generated at: {{GENERATED_AT}}
+      </p>
+    </div>
+
+    <div data-role="module-unsubscribe" class="module" role="module" data-type="unsubscribe" style="color:#444444; font-size:12px; line-height:20px; padding:16px 16px 16px 16px; text-align:Center;" data-muid="4e838cf3-9892-4a6d-94d6-170e474d21e5">
+      <p style="font-size:12px; line-height:20px;">
+        <a class="Unsubscribe--unsubscribeLink" href="{{{unsubscribe}}}" target="_blank" style="font-family:sans-serif;text-decoration:none;">
+          Unsubscribe
+        </a>
+        -
+        <a href="{{{unsubscribe_preferences}}}" target="_blank" class="Unsubscribe--unsubscribePreferences" style="font-family:sans-serif;text-decoration:none;">
+          Unsubscribe Preferences
+        </a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
+

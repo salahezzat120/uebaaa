@@ -1,0 +1,21 @@
+===========================================
+EMAIL CONFIGURATION - FINAL SETUP
+===========================================
+
+Use this email for both SMTP_USER and SOC_EMAILS:
+Email: sklans120@gmail.com
+Password: dincvxngaqrlhzgm
+
+Add these lines to backend-node/.env:
+
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_SECURE=false
+SMTP_USER=sklans120@gmail.com
+SMTP_PASSWORD=dincvxngaqrlhzgm
+SOC_EMAILS=sklans120@gmail.com
+
+===========================================
+Both SMTP_USER and SOC_EMAILS use the same email!
+===========================================
+
